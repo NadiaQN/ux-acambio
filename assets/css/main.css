@@ -1,0 +1,183 @@
+/*
+Colores corporativos (LOGO y aplicaciones)
+Verde: #4CE29E
+Azul: #11263F
+*/
+
+/* seteo de estilos generales */
+body {
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4CE29E;
+    margin-bottom: 1.5em;
+}
+p {
+    font-size: 18px;
+}
+.fix-padding {
+    padding: 0 !important;
+}
+.fix-margin {
+    margin: 0 !important;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.brand-img {
+    width: 8em;
+}
+.fa-bars {
+    color: #4CE29E;
+    font-size: 25px;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255,1);
+    font-weight: bold;
+}
+/* efecto línea verde bajo los links */
+.navbar-light .navbar-nav .nav-link::after, .navbar-light .navbar-nav .nav-link:focus::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #4CE29E;
+    transition: width .4s;
+}
+.navbar-light .navbar-nav .nav-link:hover::after, .navbar-light .navbar-nav .nav-link:focus::after {
+    width: 100%;
+}
+
+/* botones registro/iniciar sesión */
+.form-inline .btn {
+    border: none;
+    background-color: #4CE29E;
+    color: #fff !important;
+    font-weight: bold;
+    border-radius: 4em;
+    width: 9em;
+    height: 3em;
+    padding-top: .8em;
+    margin-left: .3em;
+}
+.form-inline .btn:hover {
+    background-color: rgba(76, 226, 158, 0.5);
+}
+
+/* slider bienvenida */
+#slider_welcome {
+    
+}
+
+/* sección Con Acambio puedes... */
+
+#you-can {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#you-can .fa-chevron-right {
+    color: #4CE29E;
+}
+#you-can p {
+    line-height: 21px;
+}
+
+
+/* sección testimonios */
+
+#testimonies {
+    background-color: #4CE29E;
+}
+.list-images, .navegation {
+    padding-left: 0;
+}
+.testimony {
+    border-radius: 50%;
+    position: relative;
+    top: -1em;
+}
+#testimonies h6 {
+    margin-bottom: 0;
+}
+#testimonies span {
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+#testimonies p {
+    font-style: italic;
+    font-size: 18px;
+}
+.left, .right {
+    display: none !important;
+}
+.iconsDefaultColor {
+    color: rgba(255, 255, 255, 0.7);
+}
+.iconsNavegationColor {
+    color: rgb(23,68,47);
+}
+
+/* sección estadisticas */
+#numbers {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: #11263F;
+    color: #4CE29E;
+}
+#numbers h2 {
+    font-family: 'Open Sans';
+    font-size: 65px;
+}
+#numbers p {
+    font-size: 16px;
+}
+
+/* sección ¿cómo funciona? */
+
+#how-work {
+    margin-top: 2em;
+    height: 10em; /* solo mientras esta vacia la seccion */
+}
+
+/* Media Queries */
+
+@media (min-width: 721px) and (max-width: 991px) {
+    /* elimina border-bottom verde */
+    .navbar-light .navbar-nav .nav-link::after, .navbar-light .navbar-nav .nav-link:focus::after {
+        background: transparent;
+    }  
+}
+
+@media (min-width: 541px) and (max-width: 720px) {
+    /* elimina border-bottom verde */
+    .navbar-light .navbar-nav .nav-link::after, .navbar-light .navbar-nav .nav-link:focus::after {
+        background: transparent;
+    }  
+}
+
+@media (max-width: 540px) {
+    /* elimina border-bottom verde */
+    .navbar-light .navbar-nav .nav-link::after, .navbar-light .navbar-nav .nav-link:focus::after {
+        background: transparent;
+    }
+    .form-inline .btn {
+        margin-bottom: .3em;
+    }
+}
+
