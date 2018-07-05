@@ -1,6 +1,18 @@
 $(document).ready(function(){
     carouselNavegation();
+    $('.slider').slick({
+      adaptativeHeight: true,
+      autoplay: true,
+      arrows: false,
+      dots: false,
+      fade: true,
+      infinite: true,
+      mobilefirst: true,
+      accessibility: false,
+      dots: true
+    });
   });
+  
   
   //Carrusel con iconos de navegación
 
@@ -45,7 +57,7 @@ $(document).ready(function(){
       $('.navegation li:eq('+ (paginationPos) +')').addClass('iconsNavegationColor');
     }
   
-  function nextSlider(){
+    function nextSlider(){
       if(imgPos >= imgItems){
         imgPos = 1;
       }else {
@@ -58,3 +70,22 @@ $(document).ready(function(){
       $('.list-images li').hide();
       $('.list-images li:nth-child('+ imgPos +')').fadeIn();
     }
+
+    /* Botones para agregar email y teléfono */
+
+    $('.add-email').click(function(){
+      $('#email').before('<input type="email" class="form-control" aria-describedby="email">');
+    })
+    $('.add-phone').click(function(){
+      $('#phone').before('<input type="text" class="form-control" aria-describedby="phone">');
+    })
+
+    /* Mensaje formulario enviado */
+
+    $('.send').click(function(){
+      if($('#name').val() != 0 && $('#empresa').val() != 0 && $('#email').val() != 0) {
+        $('.modal-body').empty();
+        $('.modal-body').append('<img src="assets/img/aCambio-06.jpg" alt=""><p>Gracias por tu intéres en aCambio. Enviaremos un mensaje a tu casilla de correo. ¡Pronto nos contactaremos contigo!</p>')
+      }
+      
+    })

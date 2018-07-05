@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
     <!-- Hoja de estilos separada del codigo html-->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -19,7 +21,7 @@
     <header>
         <div class="row fix-margin">
             <div class="col-12 fix-padding">
-                <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+                <nav class="navbar fixed-top navbar-expand-xl navbar-light">
                     <a class="navbar-brand flex-grow-1" href="index.html"><img class="brand-img" src="assets/img/logo-acambio.png" alt="logo-acambio"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fas fa-bars"></span>
@@ -30,15 +32,24 @@
                                 <a class="nav-link" href="#what-is">¿Qué es Acambio?</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Beneficios</a>
+                                <a class="nav-link" href="#how-work">¿Cómo funciona?</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Integrate</a>
+                                <a class="nav-link" href="#">¿Quiénes somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FQA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#more-info">Contacto</a>
                             </li>
                         </ul>
                         <form class="form-inline">
-                            <a class="btn">Registrate</a>
-                            <a class="btn">Iniciar sesión</a>
+                            <a href="http://app.acambio.cl/#login%7Cusers.users.public-registration!groupId=593606427701736927" class="btn" target="_blank">¡Integrate!</a>
+                            <a href="http://app.acambio.cl/#login" class="btn-login" target="_blank">INGRESA</a>
                         </form>
                     </div>
                 </nav>
@@ -47,7 +58,27 @@
         <div class="row fix-margin">
             <div class="col-12 fix-padding">
                 <!-- Carrusel c/texto bienvenida -->
-                <div id="slider_welcome">
+                <div id="slider_welcome" class="text-center">
+                    <div class="slider">
+                        <div>
+                            <img class="img-desktop" src="assets/img/foto-bienvenida.jpg" alt="">
+                            <img class="img-mobile" src="assets/img/foto-bienvenida-mobile.jpg" alt="">
+                            <h2>En aCambio Compra y paga con tus productos o servicios... </h2>
+                            <a href="http://app.acambio.cl/#login%7Cusers.users.public-registration!groupId=593606427701736927" class="btn" target="_blank">¡Integrate!</a>
+                        </div>
+                        <div>
+                            <img class="img-desktop" src="assets/img/foto-bienvenida-2.jpg" alt="">
+                            <img class="img-mobile" src="assets/img/foto-bienvenida-mobile-2.jpg" alt="">
+                            <h2>Compra y vende por medio del trueque colaborativo a otras empresas o profesionales.</h2>
+                            <a href="http://app.acambio.cl/#login%7Cusers.users.public-registration!groupId=593606427701736927" class="btn" target="_blank">¡Integrate!</a>
+                        </div>
+                        <div>
+                            <img class="img-desktop" src="assets/img/foto-bienvenida-3.jpg" alt="">
+                            <img class="img-mobile" src="assets/img/foto-bienvenida-mobile-3.jpg" alt="">
+                            <h2>Una forma colaborativa de hacer negocios.</h2>
+                            <a href="http://app.acambio.cl/#login%7Cusers.users.public-registration!groupId=593606427701736927" class="btn" target="_blank">¡Integrate!</a>
+                        </div>
+                    </div>       
                 </div>
             </div>
         </div>
@@ -58,9 +89,7 @@
                 <div class="col-md-6 col-sm-12">
                     <h3>¿Qué es Acambio?</h3>
                     <p>
-                        Somos una red de colaboración entre empresas donde puedes intercambiar tus productos
-                        o servicios sin dinero con otras empresas o profesionales. Tus compras las pagas con
-                        las ventas que hagas dentro de nuestro portal.
+                        Somos una red de trueque colaborativo entre empresas donde puedes intercambiar tus productos o servicios sin dinero con otras empresas o profesionales. Tus compras las pagas con las ventas que hagas dentro de nuestro local.
                     </p>
                 </div>
                 <div class="col-md-6 col-sm-12 embed-responsive embed-responsive-16by9">
@@ -69,20 +98,39 @@
             </div>
         </div>
         <div id="you-can">
-            <div class="row">
+            <div class="row fix-margin">
                 <div class="col-12 text-center">
                     <h3>Con Acambio puedes...</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row fix-margin">
                 <div class="col-sm-12 col-md-6">
-                    <p><span class="fas fa-chevron-right"></span> Ahorrar dinero intercambiando tus productos por otros productos o servicios de otros miembros.</p>
-                    <p><span class="fas fa-chevron-right"></span> Elegir de acuerdo a tus necesidades entre una amplia variedad de productos a intercambiar.</p>
-                    <p><span class="fas fa-chevron-right"></span> Maximixar tus ganancias  movilizando tu stock de baja rotación.</p>
+                    <div class="benefits">
+                        <img src="assets/img/Vector1.jpg" alt="">
+                        <p>Ahorrar dinero intercambiando tus productos por otros productos o servicios de otros miembros.</p>
+                    </div>
+                    <div class="benefits">
+                        <img src="assets/img/Vector4.jpg" alt="">
+                        <p> Elegir de acuerdo a tus necesidades entre una amplia variedad de productos a intercambiar.</p>
+                    </div>
+                    <div class="benefits">
+                        <img src="assets/img/Vector2.jpg" alt="">
+                        <p>Maximixar tus ganancias  movilizando tu stock de baja rotación.</p>
+                    </div>  
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <p><span class="fas fa-chevron-right"></span> Conocer a otras empresas y profesionales ampliando tus redes de colaboración.</p>
-                    <p><span class="fas fa-chevron-right"></span> Encontrar a otras personas con interes en una nueva manera de hacer negocios.</p>
+                    <div class="benefits">
+                        <img src="assets/img/Vector5.jpg" alt="">
+                        <p>Conocer a otras empresas y profesionales ampliando tus redes de colaboración.</p>
+                    </div>
+                    <div class="benefits">
+                        <img src="assets/img/Vector3.jpg" alt="">
+                        <p> Encontrar a otras personas con interes en una nueva manera de hacer negocios.</p>
+                    </div>
+                    <div class="benefits">
+                        <img src="assets/img/Vector6.jpg" alt="">
+                        <p>Empezar o mejorar tu negocio sin necesidad de hacer grandes inversiones.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,16 +146,16 @@
                         <p>“En Acambio he intercambiado productos en forma segura.”</p>
                     </li>
                     <li>
-                        <img class="testimony" src='assets/img/Ellipse.jpg'>
-                        <h6>Sergio Nuñez</h6>
-                        <span> Dueño de CotizaFarm</span>
-                        <p>“Realmente el trato es muy cercano, muy humano.”</p>
+                        <img class="testimony" src='assets/img/Ellipse-2.jpg'>
+                        <h6>Lucas Ovalle</h6>
+                        <span> Dueño de Analizaweb</span>
+                        <p>“Estoy empezando mi negocio y me han guiado en el proceso.”</p>
                     </li>
                     <li>
-                        <img class="testimony" src='assets/img/Ellipse.jpg'>
-                        <h6>Sergio Nuñez</h6>
-                        <span> Dueño de CotizaFarm</span>
-                        <p>“Estoy empezando mi negocio y me han guiado en el proceso.”</p>
+                        <img class="testimony" src='assets/img/Ellipse-3.jpg'>
+                        <h6>Marcela Fernández</h6>
+                        <span> Dueña de Panrochi</span>
+                        <p>“Realmente el trato es muy cercano, muy humano.”</p>
                     </li>
                 </ul>
                 <ol class='navegation'>
@@ -126,26 +174,182 @@
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <h2>400.000</h2>
-                    <p>Empresas se dedican al comercio sin efectivo en los Estados Unidos.</p>
+                    <p>Empresas se dedican al comercio sin efectivo, también llamado barter, en los Estados Unidos.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div id="how-work" class="text-center">
+        <div id="what-find">
+            <div class="row fix-margin">
+                <div class="col-12 text-center">
+                    <h3>¿Qué encontrarás?</h3>
+                </div>
+            </div>
+            <div class="row fix-margin">
+                <div class="col-sm-12 col-md-4">
+                    <img src="assets/img/aCambio-08.svg" alt="">
+                    <h4>Marketplace</h4>
+                    <p>Tienda virtual donde encuentras los productos dispuestos a la red por los otros miembros y publicaras los tuyos!</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img src="assets/img/aCambio-05.svg" alt="">
+                    <h4>Cuenta Interna</h4>
+                    <p>Cada empresa lleva aquí el saldo de sus compras y ventas. Esto permite el intercambio multilateral sin dinero de por medio.</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img src="assets/img/aCambio-07.svg" alt="">
+                    <h4>Asesor de Negocios</h4>
+                    <p>¿Necesitas ayuda a generar algún negocio? ¿Necesitas algún producto para que sumemos a la red? Contamos con un servicio personalizado para ayudarte a que compres de manera inteligente.</p>
+                </div>
+            </div>
+        </div>
+        <div id="how-work" class="text-center">
+            <div class="row fix-margin">
+                <div class="col-12">
                     <h3>¿Cómo funciona?</h3>
+                </div>
+                <div class="row fix-margin">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="assets/img/01_funciona.svg" alt="">
+                        <h4><span>1</span> Crea tu cuenta y anuncios</h4>
+                        <p>Crea tu cuenta y sube un anuncio con tu producto o servicio.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img src="assets/img/02_funciona.svg" alt="">
+                        <h4><span>2</span> Navega y busca</h4>
+                        <p>Vitrinea en los anuncios de otros inscritos y encuentra lo que necesitas.</p>
+                    </div>
+                </div>
+                <div class="row fix-margin">
+                    <div class="col-sm-12 col-md-6">
+                        <img src="assets/img/03_funciona.svg" alt="">
+                        <h4><span>3</span> Haz tus compras</h4>
+                        <p>Compra todo lo que necesites sin dinero.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img src="assets/img/04_funciona.svg" alt="">
+                        <h4><span>4</span> Vende dentro del portal</h4>
+                        <p>Vende cuando tu producto o servicio sea requerido por cualquier otro miembro de aCambio. </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="row fix-margin">
+        <div class="col-12 anexo text-center">
+            <h2>Tus compras las pagas con tus ventas en la plataforma. </h2>
+        </div>
+    </div>
+    <div id="more-info">
+        <div class="row fix-margin">
+            <div class="col-12 text-center">
+                <h3>¿Necesitas más información?</h3>
+                <p>Completa nuestro formulario y nos pondremos en contacto contigo a la brevedad!</p>
+                <a href="#" class="btn to-form" data-toggle="modal" data-target="#contact-us">¡Quiero contactarlos!</a>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="contact-us" tabindex="-1" role="dialog" aria-labelledby="modal-contact" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content text-center container">
+                    <div class="modal-header">
+                        <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>¡Contactanos!</h3>
+                        <p>¿Tienes dudas? Envianos tus datos y responderemos a la brevedad!</p>
+                        <form action="">
+                                <div class="form-group text-left">
+                                    <label for="inputName">NOMBRE *</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="name" required>
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="inputEmpresa">EMPRESA *</label>
+                                    <input type="text" class="form-control" id="empresa" aria-describedby="empresa" required>
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="inputmail">CORREO ELECTRÓNICO *</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="email" required>
+                                    <button class="add-email">Agregar Correo</button>
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="inputPhone">TELÉFONO</label>
+                                    <input type="text" class="form-control" id="phone" aria-describedby="phone">
+                                    <button class="add-phone">Agregar Teléfono</button>
+                                </div>
+                                <div class="form-group text-left">
+                                    <label for="textArea">Cuentanos acerca de tus dudas:</label>
+                                    <textarea class="form-control" id="textArea" rows="3"></textarea>
+                                </div>
+                                <button class="send">¡Quiero contactarlos!</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="support" class="text-center">
+        <div class="container">
+            <div class="row fix-margin">
+                <div class="col-12">
+                    <h5>Proyecto apoyado por</h5>
+                </div>
+            </div>
+            <div class="row fix-margin">
+                <div class="col-sm-12 col-md-6">
+                    <img class="corfo" class="img-fluid" src="assets/img/logotipo-corfo.jpg" alt="logo-corfo">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <img class="img-fluid" src="assets/img/logotipo-magical.jpg" alt="logo-magical-startup">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row fix-margin">
+                <div class="col-sm-12 col-md-4">
+                    <img src="assets/img/logo-acambio.png" alt="logo-acambio">
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <h5>Contacto</h5>
+                    <h6>contacto@acambio.cl</h6>
+                    <h6>+569 9796 1906</h6>
+                </div>
+                <div class="col-sm-12 col-md-4 text-center">
+                    <h5>Siguenos en Redes Sociales</h5>
+                    <a href="https://www.linkedin.com/company/acambio-chile/" target="_blank">
+                        <span class="fab fa-linkedin"></span>
+                    </a>
+                    <a href="https://www.facebook.com/acambiocl/" target="_blank">
+                        <span class="fab fa-facebook"></span>
+                    </a>
+                    <a href="https://www.instagram.com/acambiocl/" target="_blank">
+                        <span class="fab fa-instagram"></span>
+                    </a>
+                    <a href="https://twitter.com/acambiocl" target="_blank">
+                        <span class="fab fa-twitter-square"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row fix-margin">
+            <div class="col-12 legal text-center">
+                <p>&#169;2018 Acambio SpA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
     <!-- Funciones separadas del codigo html -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>
+
