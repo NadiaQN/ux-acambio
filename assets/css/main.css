@@ -142,10 +142,6 @@ p {
 #you-can p {
     line-height: 21px;
 }
-.benefits img, .benefits p {
-    display: inline;
-    margin-right: 1em;
-}
 
 
 /* sección testimonios */
